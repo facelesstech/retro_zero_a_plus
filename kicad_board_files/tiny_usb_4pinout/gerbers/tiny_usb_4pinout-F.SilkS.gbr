@@ -1,0 +1,25 @@
+G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,5.0.2+dfsg1-1~bpo9+1*
+G04 #@! TF.CreationDate,2019-06-21T17:33:42+01:00*
+G04 #@! TF.ProjectId,tiny_usb_4pinout,74696e79-5f75-4736-925f-3470696e6f75,rev?*
+G04 #@! TF.SameCoordinates,Original*
+G04 #@! TF.FileFunction,Legend,Top*
+G04 #@! TF.FilePolarity,Positive*
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 5.0.2+dfsg1-1~bpo9+1) date Fri 21 Jun 2019 17:33:42 BST*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%ADD10C,0.150000*%
+G04 APERTURE END LIST*
+D10*
+G04 #@! TO.C,J1*
+X145618200Y-95770700D02*
+X157556200Y-95770700D01*
+X157556200Y-95770700D02*
+X157556200Y-88099900D01*
+X145618200Y-95770700D02*
+X145618200Y-88099900D01*
+G04 #@! TD*
+M02*
