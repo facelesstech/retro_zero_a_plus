@@ -1,0 +1,57 @@
+(export (version D)
+  (design
+    (source /media/facelessloser/A6E4-ED97/kicad/right_angle_buttons/right_angle_buttons.sch)
+    (date "Sun 09 Dec 2018 16:50:55 GMT")
+    (tool "Eeschema 5.0.1+dfsg1-2~bpo9+1")
+    (sheet (number 1) (name /) (tstamps /)
+      (title_block
+        (title)
+        (company)
+        (rev)
+        (date)
+        (source right_angle_buttons.sch)
+        (comment (number 1) (value ""))
+        (comment (number 2) (value ""))
+        (comment (number 3) (value ""))
+        (comment (number 4) (value "")))))
+  (components
+    (comp (ref SW1)
+      (value SW_Push)
+      (footprint buttons_custom:smd_soft_custom)
+      (libsource (lib Switch) (part SW_Push) (description "Push button switch, generic, two pins"))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5C0D4547))
+    (comp (ref U1)
+      (value 2_pin_right_angle)
+      (footprint buttons_custom:right_angle_2_pin)
+      (libsource (lib right_angle_pins) (part 2_pin_right_angle) (description ""))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5C0D46E6)))
+  (libparts
+    (libpart (lib Switch) (part SW_Push)
+      (description "Push button switch, generic, two pins")
+      (fields
+        (field (name Reference) SW)
+        (field (name Value) SW_Push))
+      (pins
+        (pin (num 1) (name 1) (type passive))
+        (pin (num 2) (name 2) (type passive))))
+    (libpart (lib right_angle_pins) (part 2_pin_right_angle)
+      (fields
+        (field (name Reference) U)
+        (field (name Value) 2_pin_right_angle))
+      (pins
+        (pin (num 1) (name 1) (type input))
+        (pin (num 2) (name 2) (type input)))))
+  (libraries
+    (library (logical Switch)
+      (uri /usr/share/kicad/library/Switch.lib))
+    (library (logical right_angle_pins)
+      (uri /media/facelessloser/A6E4-ED97/kicad/new_mystuff/right_angle_pins.lib)))
+  (nets
+    (net (code 1) (name "Net-(SW1-Pad1)")
+      (node (ref SW1) (pin 1))
+      (node (ref U1) (pin 2)))
+    (net (code 2) (name "Net-(SW1-Pad2)")
+      (node (ref SW1) (pin 2))
+      (node (ref U1) (pin 1)))))
